@@ -23,6 +23,17 @@ export default defineNuxtConfig({
     preset: 'github_pages',
     output: {
       publicDir: 'dist'
+    },
+    publicAssets: [
+      { dir: 'public', files: ['**/*'] }
+    ]
+  },
+  vite: {
+    resolve: {
+      alias: {
+        '~': '/',
+        '@': '/'
+      }
     }
   }
 } as any)
