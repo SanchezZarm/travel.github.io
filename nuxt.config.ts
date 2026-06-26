@@ -1,9 +1,9 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   
   app: {
+    baseURL: '/travel.github.io/',
+    
     head: {
       title: 'TravelPulse - Поиск выгодных путешествий',
       meta: [
@@ -11,10 +11,9 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }
+        { rel: 'icon', type: 'image/x-icon', href: '/travel.github.io/images/icon.png' }
       ]
-    },
-    baseURL: '/travel.github.io/'
+    }
   },
   
   ssr: true,
@@ -23,17 +22,10 @@ export default defineNuxtConfig({
     preset: 'github_pages',
     output: {
       publicDir: 'dist'
-    },
-    publicAssets: [
-      { dir: 'public', files: ['**/*'] }
-    ]
-  },
-  vite: {
-    resolve: {
-      alias: {
-        '~': '/',
-        '@': '/'
-      }
     }
+  },
+
+  build: {
+    extractCSS: true
   }
 } as any)
