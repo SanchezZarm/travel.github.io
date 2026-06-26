@@ -19,5 +19,9 @@ export default {
     publicAssets: [
       { dir: 'public', files: ['**/*'] }
     ]
-  }
+  },
+
+  build: {
+    publicPath: '/travel.github.io/',
+  },
 }
