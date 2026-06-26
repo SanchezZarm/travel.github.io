@@ -41,7 +41,7 @@ jobs:
           ls -la dist/ || echo "dist not found"
           if [ -d "dist/images" ]; then
             echo "images folder exists!"
-            ls -la dist/images/
+            ls -la dist~/public/images/
           else
             echo "images folder NOT found!"
           fi

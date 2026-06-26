@@ -2,6 +2,7 @@ export default {
   css: ['~/assets/css/main.css'],
   
   app: {
+    baseURL: '/travel.github.io/',
     head: {
       title: 'TravelPulse - Поиск выгодных путешествий',
       meta: [
@@ -15,8 +16,8 @@ export default {
   
   nitro: {
     preset: 'github_pages',
-    output: {
-      publicDir: 'dist'
-    }
+    publicAssets: [
+      { dir: 'public', files: ['**/*'] }
+    ]
   }
 }
