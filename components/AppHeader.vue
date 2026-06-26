@@ -3,7 +3,7 @@
     <div class="header-top container">
       <div class="header-left">
         <a href="/" class="logo">
-          <img src="/travel.github.io/images/photoroom.png" alt="Travel Pulse" class="logo-img" />
+          <img src="/images/photoroom.png" alt="Travel Pulse" class="logo-img" />
           <div class="logo-text-wrapper">
             <span class="logo-text">Travel</span>
             <span class="logo-text">Pulse</span>
@@ -15,7 +15,7 @@
         <div class="search-input-wrapper">
           <input type="text" :placeholder="t('search')" class="header-search-input" />
           <button class="search-btn">
-            <img src="/travel.github.io/images/search.png" />
+            <img src="/images/search.png" />
           </button>
         </div>
       </div>
@@ -36,26 +36,26 @@
         </div>
 
         <button class="login-btn" @click="$emit('openLogin')">
-          <img src="/travel.github.io/images/icon.png" width="30" height="30" />
+          <img src="/images/icon.png" width="30" height="30" />
           <span class="login-text">{{ t('login') }}</span>
         </button>
         <button class="menu-btn">
-          <img src="/travel.github.io/images/menu.png" width="30" height="30" />
+          <img src="/images/menu.png" width="30" height="30" />
         </button>
       </div>
     </div>
 
     <div class="header-tabs container" v-if="!isMobile">
       <button class="tab-btn">
-        <img src="/travel.github.io/images/car.png" alt="car" width="20" height="20" class="tab-icon" />
+        <img src="/images/car.png" alt="car" width="20" height="20" class="tab-icon" />
         {{ t('carRental') }}
       </button>
       <button class="tab-btn">
-        <img src="/travel.github.io/images/airport.png" alt="airport" width="20" height="20" class="tab-icon" />
+        <img src="/images/airport.png" alt="airport" width="20" height="20" class="tab-icon" />
         {{ t('flights') }}
       </button>
       <button class="tab-btn">
-        <img src="/travel.github.io/images/bed.png" alt="bed" width="20" height="20" class="tab-icon" />
+        <img src="/images/bed.png" alt="bed" width="20" height="20" class="tab-icon" />
         {{ t('hotels') }}
       </button>
     </div>
@@ -75,28 +75,28 @@
       </div>
 
       <div class="mobile-dest-field">
-       <img src="/travel.github.io/images/pointer2.png"/>
+       <img src="/images/pointer2.png"/>
         <input type="text" :placeholder="t('countryCity')" class="mobile-dest-input" />
       </div>
 
       <div class="mobile-row">
         <div class="mobile-half-field">
-        <img src="/travel.github.io/images/calendar.png"/>
+        <img src="/images/calendar.png"/>
           <span class="mobile-half-text">{{ t('selectDate') }}</span>
         </div>
         <div class="mobile-half-field">
-          <img src="/travel.github.io/images/clock.png"/>
+          <img src="/images/clock.png"/>
           <span class="mobile-half-text">Кол-во ночей</span>
         </div>
       </div>
 
       <div class="mobile-row">
         <div class="mobile-half-field">
-          <img src="/travel.github.io/images/customer.png"/>
+          <img src="/images/customer.png"/>
           <span class="mobile-half-text">Кол-во людей</span>
         </div>
         <div class="mobile-half-field">
-          <img src="/travel.github.io/images/private.png"/>
+          <img src="/images/private.png"/>
           <span class="mobile-half-text">Выберите класс</span>
         </div>
       </div>

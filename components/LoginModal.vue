@@ -6,7 +6,7 @@
 
         <div class="modal-header">
           <div class="modal-logo">
-            <img src="/travel.github.io/images/photoroom.png" alt="TravelPulse" class="modal-logo-img" />
+            <img src="/images/photoroom.png" alt="TravelPulse" class="modal-logo-img" />
           </div>
           <h2 class="modal-title">TravelPulse</h2>
         </div>
@@ -26,15 +26,15 @@
 
           <div class="social-buttons">
             <button class="social-btn facebook">
-              <img src="/travel.github.io/images/face.png"/>
+              <img src="/images/face.png"/>
               <span>Facebook</span>
             </button>
             <button class="social-btn google">
-              <img src="/travel.github.io/images/google.png"/>
+              <img src="/images/google.png"/>
               <span>Google</span>
             </button>
             <button class="social-btn apple">
-             <img src="/travel.github.io/images/apple.png"/>
+             <img src="/images/apple.png"/>
               <span>Apple</span>
             </button>
           </div>
