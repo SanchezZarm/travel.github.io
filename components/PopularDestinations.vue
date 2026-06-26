@@ -38,10 +38,10 @@ const { t } = useI18n()
 const track = ref(null)
 
 const destinations = computed(() => [
-  { name: t('paris'), image: '~/assets/images/paris.png' },
-  { name: t('rome'), image: '~/assets/images//rim.png' },
-  { name: t('bali'), image: '~/assets/images/bali.png' },
-  { name: t('baikal'), image: '~/assets/images/baikal.png' }
+  { name: t('paris'), image: '/images/paris.png' },
+  { name: t('rome'), image: '/images//rim.png' },
+  { name: t('bali'), image: '/images/bali.png' },
+  { name: t('baikal'), image: '/images/baikal.png' }
 ])
 
 const scrollCarousel = (direction) => {
