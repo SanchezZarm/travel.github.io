@@ -33,12 +33,12 @@ import { useI18n } from '../composables/useI18n'
 const { t } = useI18n()
 
 const tours = [
-  { name: 'DisneyLand', location: 'France, Paris', rating: 4.7, image: '/images/disnayland.png' },
-  { name: 'Coliseum', location: 'Italy, Roma', rating: 4.2, image: '/images/colizey.png' },
-  { name: 'Tanakh-Lot', location: 'Indonesia, Bali', rating: 5.0, image: '/images/indonesia.png' },
-  { name: 'Olkhon', location: 'Russia, Irkutsk', rating: 4.0, image: '/images/olkhon.png' },
-  { name: 'The Great Wall of China', location: 'China', rating: 4.1, image: '/images/china.png' },
-  { name: 'Burj Khalifa', location: 'UAE, Dubai', rating: 4.8, image: '/images/dubai.png' }
+  { name: 'DisneyLand', location: 'France, Paris', rating: 4.7, image: '~/public/images/disnayland.png' },
+  { name: 'Coliseum', location: 'Italy, Roma', rating: 4.2, image: '~/public/images/colizey.png' },
+  { name: 'Tanakh-Lot', location: 'Indonesia, Bali', rating: 5.0, image: '~/public/images/indonesia.png' },
+  { name: 'Olkhon', location: 'Russia, Irkutsk', rating: 4.0, image: '~/public/images/olkhon.png' },
+  { name: 'The Great Wall of China', location: 'China', rating: 4.1, image: '~/public/images/china.png' },
+  { name: 'Burj Khalifa', location: 'UAE, Dubai', rating: 4.8, image: '~/public/images/dubai.png' }
 ]
 </script>
 
