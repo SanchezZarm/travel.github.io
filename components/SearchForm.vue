@@ -4,7 +4,7 @@
       <div class="search-row">
         <div class="search-field" @click="openDropdown('from')">
           <span class="field-label">{{ t('from') }}</span>
-          <img class="line" alt="Line" src="/images/line-1-2.svg" />
+          <img class="line" alt="Line" src="~/assets/images/line-1-2.svg" />
           <span class="field-value">{{ fromCity }}</span>
           <div v-if="activeDropdown === 'from'" class="dropdown">
             <div class="dropdown-item" @click.stop="selectFrom('Россия (RU)')">
