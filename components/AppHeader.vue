@@ -85,7 +85,7 @@
           <span class="mobile-half-text">{{ t('selectDate') }}</span>
         </div>
         <div class="mobile-half-field">
-          <img src="~/public/images/clock.png"/>
+          <img src="/images/clock.png"/>
           <span class="mobile-half-text">Кол-во ночей</span>
         </div>
       </div>
