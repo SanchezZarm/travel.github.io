@@ -38,7 +38,7 @@ const { t } = useI18n()
 const track = ref(null)
 
 const destinations = computed(() => [
-  { name: t('paris'), image: '`/travel.github.io/images/paris.png`' },
+  { name: t('paris'), image: '/travel.github.io/images/paris.png' },
   { name: t('rome'), image: '/travel.github.io/images/rim.png' },
   { name: t('bali'), image: '/travel.github.io/images/bali.png' },
   { name: t('baikal'), image: '/travel.github.io/images/baikal.png' }
