@@ -3,7 +3,7 @@
     <div class="header-top container">
       <div class="header-left">
         <a href="/" class="logo">
-          <img src="~/public/images/Photoroom.png" alt="Travel Pulse" class="logo-img" />
+          <img src="~/public/images/photoroom.png" alt="Travel Pulse" class="logo-img" />
           <div class="logo-text-wrapper">
             <span class="logo-text">Travel</span>
             <span class="logo-text">Pulse</span>
