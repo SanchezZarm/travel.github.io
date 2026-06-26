@@ -1,10 +1,8 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
-export default defineNuxtConfig({
+export default {
   css: ['~/assets/css/main.css'],
   
   app: {
-    baseURL: '/',
+    baseURL: '/travel.github.io/',
     head: {
       title: 'TravelPulse - Поиск выгодных путешествий',
       meta: [
@@ -22,4 +20,4 @@ export default defineNuxtConfig({
       publicDir: 'dist'
     }
   }
-} as any)
+}
