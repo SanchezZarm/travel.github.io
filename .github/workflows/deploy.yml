@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -33,18 +33,17 @@ jobs:
       - name: Generate static site
         run: npm run generate
         env:
-          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
+          NUXT_APP_BASE_URL: /travel.github.io/
       
-      - name: Debug - check dist folder
+      - name: Debug - check dist
         run: |
           echo "Checking dist directory:"
-          ls -la dist/
-          echo ""
-          echo "Checking index.html:"
-          if [ -f "dist/index.html" ]; then
-            echo "index.html exists!"
+          ls -la dist/ || echo "dist not found"
+          if [ -d "dist/images" ]; then
+            echo "images folder exists!"
+            ls -la dist/images/
           else
-            echo "index.html NOT found!"
+            echo "images folder NOT found!"
           fi
       
       - name: Upload artifact

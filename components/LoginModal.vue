@@ -6,7 +6,7 @@
 
         <div class="modal-header">
           <div class="modal-logo">
-            <img src="/images/Photoroom.png" alt="TravelPulse" class="modal-logo-img" />
+            <img src="/travel.github.io/images/Photoroom.png" alt="TravelPulse" class="modal-logo-img" />
           </div>
           <h2 class="modal-title">TravelPulse</h2>
         </div>

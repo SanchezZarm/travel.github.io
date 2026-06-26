@@ -8,63 +8,63 @@
           <span class="field-value">{{ fromCity }}</span>
           <div v-if="activeDropdown === 'from'" class="dropdown">
             <div class="dropdown-item" @click.stop="selectFrom('Россия (RU)')">
-              <img src="/images/flag.png" alt="flag" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/flag.png" alt="flag" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Россия (RU)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Москва (Любой)')">
-              <img src="/images/pointer.png" alt="pointer" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/pointer.png" alt="pointer" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Москва (Любой)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Санкт-Петербург Пулково (LED)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Санкт-Петербург Пулково (LED)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Казань (KZN)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Казань (KZN)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Сочи (AER)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Сочи (AER)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Moma (MQJ)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Moma (MQJ)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Москва Шереметьево (SVO)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Москва Шереметьево (SVO)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Москва Внуково (VKO)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Москва Внуково (VKO)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Москва Жуковский (ZIA)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div>
                 <div class="dropdown-name">Москва Жуковский (ZIA)</div>
                 <div class="dropdown-sub">Россия</div>
@@ -79,11 +79,11 @@
           <span class="field-value" :class="{ placeholder: !toCity }">{{ toCity || t('countryCity') }}</span>
           <div v-if="activeDropdown === 'to'" class="dropdown to-dropdown">
             <div class="dropdown-item" @click.stop="closeAllDropdowns()">
-              <img src="/images/search.png" alt="search" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/search.png" alt="search" class="dropdown-icon-img" />
               <div class="dropdown-name" style="color: #0047BB; font-weight: 600;">{{ t('searchEverywhere') }}</div>
             </div>
             <div class="dropdown-item" @click.stop="closeAllDropdowns()">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <img src="/travel.github.io/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
               <div class="dropdown-name" style="color: #0047BB; font-weight: 600;">{{ t('complexRoute') }}</div>
             </div>
           </div>
