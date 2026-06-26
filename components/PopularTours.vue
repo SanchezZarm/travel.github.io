@@ -33,12 +33,12 @@ import { useI18n } from '../composables/useI18n'
 const { t } = useI18n()
 
 const tours = [
-  { name: 'DisneyLand', location: 'France, Paris', rating: 4.7, image: '/travel.github.io//images/disnayland.png' },
-  { name: 'Coliseum', location: 'Italy, Roma', rating: 4.2, image: '/travel.github.io//images/colizey.png' },
-  { name: 'Tanakh-Lot', location: 'Indonesia, Bali', rating: 5.0, image: '/travel.github.io//images/indonesia.png' },
-  { name: 'Olkhon', location: 'Russia, Irkutsk', rating: 4.0, image: '/travel.github.io//images/olkhon.png' },
-  { name: 'The Great Wall of China', location: 'China', rating: 4.1, image: '/travel.github.io//images/china.png' },
-  { name: 'Burj Khalifa', location: 'UAE, Dubai', rating: 4.8, image: '/travel.github.io//images/dubai.png' }
+  { name: 'DisneyLand', location: 'France, Paris', rating: 4.7, image: '/travel.github.io/images/disnayland.png' },
+  { name: 'Coliseum', location: 'Italy, Roma', rating: 4.2, image: '/travel.github.io/images/colizey.png' },
+  { name: 'Tanakh-Lot', location: 'Indonesia, Bali', rating: 5.0, image: '/travel.github.io/images/indonesia.png' },
+  { name: 'Olkhon', location: 'Russia, Irkutsk', rating: 4.0, image: '/travel.github.io/images/olkhon.png' },
+  { name: 'The Great Wall of China', location: 'China', rating: 4.1, image: '/travel.github.io/images/china.png' },
+  { name: 'Burj Khalifa', location: 'UAE, Dubai', rating: 4.8, image: '/travel.github.io/images/dubai.png' }
 ]
 </script>
 
