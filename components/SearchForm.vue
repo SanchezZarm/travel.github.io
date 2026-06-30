@@ -4,69 +4,27 @@
       <div class="search-row">
         <div class="search-field" @click="openDropdown('from')">
           <span class="field-label">{{ t('from') }}</span>
-          <img class="line" alt="Line" src="/images/line-1-2.svg" />
+          <span class="line">▶</span>
           <span class="field-value">{{ fromCity }}</span>
           <div v-if="activeDropdown === 'from'" class="dropdown">
             <div class="dropdown-item" @click.stop="selectFrom('Россия (RU)')">
-              <img src="/images/flag.png" alt="flag" class="dropdown-icon-img" />
+              <span class="dropdown-icon">🇷🇺</span>
               <div>
                 <div class="dropdown-name">Россия (RU)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Москва (Любой)')">
-              <img src="/images/pointer.png" alt="pointer" class="dropdown-icon-img" />
+              <span class="dropdown-icon">📍</span>
               <div>
                 <div class="dropdown-name">Москва (Любой)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
             <div class="dropdown-item" @click.stop="selectFrom('Санкт-Петербург Пулково (LED)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
+              <span class="dropdown-icon">✈️</span>
               <div>
                 <div class="dropdown-name">Санкт-Петербург Пулково (LED)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Казань (KZN)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Казань (KZN)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Сочи (AER)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Сочи (AER)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Moma (MQJ)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Moma (MQJ)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Москва Шереметьево (SVO)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Москва Шереметьево (SVO)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Москва Внуково (VKO)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Москва Внуково (VKO)</div>
-                <div class="dropdown-sub">Россия</div>
-              </div>
-            </div>
-            <div class="dropdown-item" @click.stop="selectFrom('Москва Жуковский (ZIA)')">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div>
-                <div class="dropdown-name">Москва Жуковский (ZIA)</div>
                 <div class="dropdown-sub">Россия</div>
               </div>
             </div>
@@ -75,35 +33,31 @@
 
         <div class="search-field" @click="openDropdown('to')">
           <span class="field-label">{{ t('to') }}</span>
-          <img class="line-2" alt="Line" src="/images/line-1-2.svg" />
+          <span class="line">▶</span>
           <span class="field-value" :class="{ placeholder: !toCity }">{{ toCity || t('countryCity') }}</span>
           <div v-if="activeDropdown === 'to'" class="dropdown to-dropdown">
             <div class="dropdown-item" @click.stop="closeAllDropdowns()">
-              <img src="/images/search.png" alt="search" class="dropdown-icon-img" />
+              <span class="dropdown-icon">🔍</span>
               <div class="dropdown-name" style="color: #0047BB; font-weight: 600;">{{ t('searchEverywhere') }}</div>
-            </div>
-            <div class="dropdown-item" @click.stop="closeAllDropdowns()">
-              <img src="/images/airplane.png" alt="airplane" class="dropdown-icon-img" />
-              <div class="dropdown-name" style="color: #0047BB; font-weight: 600;">{{ t('complexRoute') }}</div>
             </div>
           </div>
         </div>
 
         <div class="search-field" @click="toggleCalendar('depart')">
           <span class="field-label">{{ t('there') }}</span>
-          <img class="line-3" alt="Line" src="/images/line-1-2.svg" />
+          <span class="line">▶</span>
           <span class="field-value" :class="{ placeholder: !departDate }">{{ departDate || t('selectDate') }}</span>
         </div>
 
         <div class="search-field date-field" @click="toggleCalendar('return')">
           <span class="field-label">{{ t('back') }}</span>
-          <img class="line-3" alt="Line" src="/images/line-1-2.svg" />
+          <span class="line">▶</span>
           <span class="field-value" :class="{ placeholder: !returnDate }">{{ returnDate || t('selectDate') }}</span>
         </div>
 
         <div class="search-field" @click="openDropdown('travelers')">
           <span class="field-label">{{ t('travelers') }}</span>
-          <img class="line-3" alt="Line" src="/images/line-1-4.svg" />
+          <span class="line">▶</span>
           <span class="field-value">{{ travelersText }}</span>
           <div v-if="activeDropdown === 'travelers'" class="dropdown travelers-dropdown">
             <div class="traveler-row">
@@ -133,7 +87,7 @@
 
         <div class="search-field" @click="openDropdown('class')">
           <span class="field-label">{{ t('class') }}</span>
-          <img class="line-3" alt="Line" src="/images/line-1-5.svg" />
+          <span class="line">▶</span>
           <span class="field-value">{{ selectedClass }}</span>
           <div v-if="activeDropdown === 'class'" class="dropdown class-dropdown">
             <div class="class-dropdown-title">{{ t('cabinClass') }}</div>
@@ -217,54 +171,6 @@
               <span class="cal-day">30</span>
             </div>
           </div>
-
-          <div class="calendar-month">
-            <div class="month-nav">
-              <h3>Июль</h3>
-              <button class="month-arrow">›</button>
-            </div>
-            <div class="cal-grid">
-              <span class="cal-day-name">пн</span>
-              <span class="cal-day-name">вт</span>
-              <span class="cal-day-name">ср</span>
-              <span class="cal-day-name">чт</span>
-              <span class="cal-day-name">пт</span>
-              <span class="cal-day-name">сб</span>
-              <span class="cal-day-name">вс</span>
-              <span class="cal-day empty"></span>
-              <span class="cal-day">1</span>
-              <span class="cal-day">2</span>
-              <span class="cal-day">3</span>
-              <span class="cal-day">4</span>
-              <span class="cal-day">5</span>
-              <span class="cal-day">6</span>
-              <span class="cal-day">7</span>
-              <span class="cal-day">8</span>
-              <span class="cal-day">9</span>
-              <span class="cal-day">10</span>
-              <span class="cal-day">11</span>
-              <span class="cal-day">12</span>
-              <span class="cal-day">13</span>
-              <span class="cal-day">14</span>
-              <span class="cal-day">15</span>
-              <span class="cal-day">16</span>
-              <span class="cal-day">17</span>
-              <span class="cal-day">18</span>
-              <span class="cal-day">19</span>
-              <span class="cal-day">20</span>
-              <span class="cal-day">21</span>
-              <span class="cal-day">22</span>
-              <span class="cal-day">23</span>
-              <span class="cal-day">24</span>
-              <span class="cal-day">25</span>
-              <span class="cal-day">26</span>
-              <span class="cal-day">27</span>
-              <span class="cal-day">28</span>
-              <span class="cal-day">29</span>
-              <span class="cal-day">30</span>
-              <span class="cal-day">31</span>
-            </div>
-          </div>
         </div>
 
         <div class="calendar-footer">
@@ -290,8 +196,8 @@ const adults = ref(1)
 const children = ref(0)
 const selectedClass = ref('Эконом')
 
- fromCity.value = t('Иркутск(IKT)')
-  selectedClass.value = t('economy')
+fromCity.value = t('Иркутск(IKT)')
+selectedClass.value = t('economy')
 
 watch(lang, () => {
   fromCity.value = t('Irkutsk (IKT)')
@@ -302,9 +208,6 @@ const activeDropdown = ref(null)
 const showCalendar = ref(false)
 const calendarMode = ref('depart')
 const searchSection = ref(null)
-
-const months = computed(() => t('months').split(','))
-const weekdays = computed(() => t('weekdays').split(','))
 
 const openDropdown = (name) => {
   if (activeDropdown.value === name) {
@@ -328,14 +231,6 @@ const toggleCalendar = (mode) => {
   } else {
     activeDropdown.value = 'calendar'
     showCalendar.value = true
-  }
-}
-
-const selectDate = (date, mode) => {
-  if (mode === 'depart') {
-    departDate.value = date
-  } else {
-    returnDate.value = date
   }
 }
 
@@ -599,7 +494,8 @@ const travelersText = computed(() => {
 .calendar-popup {
   position: absolute;
   top: calc(100% + 8px);
-  left: 200px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -607,6 +503,7 @@ const travelersText = computed(() => {
   z-index: 200;
   padding: 16px;
   width: 380px;
+  max-width: calc(100vw - 32px);
   margin-top: 4px;
 }
 
@@ -765,35 +662,16 @@ const travelersText = computed(() => {
     gap: 12px;
   }
 
-  .search-fields-wrapper {
-    width: 100%;
-    border-radius: 12px;
-    flex-direction: column;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
   .search-field {
+    width: 100%;
+    min-height: 56px;
+    padding: 8px 12px;
     border-right: none;
     border-bottom: 1px solid #e0e0e0;
-    width: 100%;
   }
 
   .search-field:last-child {
     border-bottom: none;
-  }
-
-  .from-field,
-  .to-field,
-  .date-field,
-  .travelers-field,
-  .class-field {
-    flex: none;
-    width: 100%;
-  }
-
-  .field-box {
-    min-height: 56px;
-    padding: 8px 12px;
   }
 
   .field-label {
@@ -810,8 +688,10 @@ const travelersText = computed(() => {
     min-height: 52px;
     font-size: 16px;
     border-radius: 12px;
+    padding: 0 24px;
   }
 
+  /* Календарь на мобилке */
   .calendar-popup {
     left: 50%;
     transform: translateX(-50%);
@@ -841,8 +721,9 @@ const travelersText = computed(() => {
     padding: 12px 0 20px;
   }
 
-  .field-box {
+  .search-field {
     padding: 6px 10px;
+    min-height: 48px;
   }
 
   .field-label {
@@ -855,7 +736,13 @@ const travelersText = computed(() => {
 
   .search-btn-main {
     font-size: 15px;
-    padding: 0 24px;
+    padding: 0 20px;
+    min-height: 48px;
+  }
+
+  .calendar-popup {
+    width: calc(100vw - 16px);
+    padding: 12px;
   }
 }
 </style>
