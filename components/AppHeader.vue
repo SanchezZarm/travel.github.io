@@ -427,6 +427,10 @@ const changeLang = (newLang) => {
 }
 
 @media (max-width: 768px) {
+  .header-top {
+    gap: 25px;
+  }
+
   .header-title h1 {
     font-size: 22px;
     line-height: 1.3;
